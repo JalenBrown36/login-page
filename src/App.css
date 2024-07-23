@@ -1,0 +1,123 @@
+.login-container{
+  width: 100%;
+  min-height: 100vh;
+  padding: 10%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.user-login{
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+.header-container h1{
+  font-size: 3rem;
+  font-weight: var(--semibold);
+}
+.header-container p {
+  font-size: 1rem;
+  font-weight: var(--medium);
+  color: var(--secondary-txt-color);
+  margin-top: .5rem;
+}
+.google-login-wrapper {
+  margin-top: 36px;
+  padding: .5rem .75rem;
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  gap: .25rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--btn-rounded-md);
+  background-color: var(--secondary-bg-color);
+}
+.google-login-wrapper:hover {
+  background-color: #161616;
+  cursor: pointer;
+}
+.google-btn {
+  border: none;
+  color: var(--secondary-txt-color);
+  background-color: transparent;
+  cursor: pointer;
+}
+.input-form{
+  margin: 42px 0 26px 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+.input-form .input-wrapper{
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  font-size: 1rem;
+  color: var(--secondary-txt-color);
+}
+.input-form input{
+  padding: .75rem 1rem;
+  width: 100%;
+  border: 1px solid var(--input-default-border-color);
+  border-radius: var(--input-rounded-md);
+  color: var(--primary-txt-color);
+  background-color: var(--secondary-bg-color);
+  font-size: 1rem;
+}
+.input-form input:focus, .input-form input:focus-visible{
+  border-color: var(--input-active-border-color);
+  outline: none;
+}
+.checkbox-wrapper{
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: .5rem;
+}
+.checkbox-wrapper input{
+  cursor: pointer;
+}
+.btn-wrapper *{
+  width: 100%;
+}
+.login-btn{
+  padding: .75rem 0;
+  border: none;
+  border-radius: var(--btn-rounded-md);
+  color: var(--primary-txt-color);
+  background-color: var(--btn-default-color);
+}
+.login-btn:hover{
+  background-color: var(--btn-hover-color);
+  cursor: pointer;
+}
+.sign-up-form{
+  width: 100%;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  font-size: .75rem;
+}
+.sign-up-form div{
+  display: flex;
+  gap: 1rem;
+}
+.sign-up-form div p{
+  color: var(--accent-txt-color);
+}
+.sign-up-form a{
+  color: var(--secondary-txt-color);
+  text-decoration: none;
+}
+.sign-up-form a:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+.login-img{
+
+}

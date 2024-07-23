@@ -1,0 +1,34 @@
+@import url('https://fonts.google.com/specimen/Poppins?query=poppins');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-bg-color: #000000;
+  --secondary-bg-color: #1A1A1A;
+
+  --primary-txt-color: #FFFFFF;
+  --secondary-txt-color: #AFAFAF;
+  --accent-txt-color: #424242;
+
+  --input-default-border-color: #1F1F1F;
+  --input-active-border-color: #3E43FB;
+  --input-rounded-md: .25rem;
+
+  --btn-default-color: #3E43FB;
+  --btn-hover-color: #3134B5;
+  --btn-rounded-md: .5rem;
+
+  --regular: 400;
+  --medium: 500;
+  --semibold: 600;
+  --bold: 700;
+
+
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  background: black;
+}
