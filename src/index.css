@@ -22,11 +22,12 @@
   --btn-hover-color: #3134B5;
   --btn-rounded-md: .5rem;
 
+  --img-rounded-lg: 2rem;
+
   --regular: 400;
   --medium: 500;
   --semibold: 600;
   --bold: 700;
-
 
   font-family: 'Poppins', sans-serif;
   color: white;

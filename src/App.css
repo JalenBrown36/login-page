@@ -4,6 +4,7 @@
   padding: 10%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
 }
 .user-login{
   min-height: 600px;
@@ -22,7 +23,7 @@
   color: var(--secondary-txt-color);
   margin-top: .5rem;
 }
-.google-login-wrapper {
+.google-login-container {
   margin-top: 36px;
   padding: .5rem .75rem;
   width: fit-content;
@@ -34,7 +35,7 @@
   border-radius: var(--btn-rounded-md);
   background-color: var(--secondary-bg-color);
 }
-.google-login-wrapper:hover {
+.google-login-container:hover {
   background-color: #161616;
   cursor: pointer;
 }
@@ -51,7 +52,7 @@
   flex-direction: column;
   gap: 26px;
 }
-.input-form .input-wrapper{
+.input-form .input-container{
   display: flex;
   flex-direction: column;
   gap: .5rem;
@@ -71,18 +72,28 @@
   border-color: var(--input-active-border-color);
   outline: none;
 }
-.checkbox-wrapper{
+.checkbox-container{
+  position: relative;
   width: 100%;
   height: fit-content;
   display: flex;
   justify-content: flex-start;
-  align-items: center;
-  gap: .5rem;
+  align-items: stretch;
 }
-.checkbox-wrapper input{
+.checkbox-container input{
+  height: 100%;
   cursor: pointer;
 }
-.btn-wrapper *{
+.checkbox-container label:last-child{
+  position: absolute;
+  left: 1.25rem;
+  cursor: pointer;
+}
+.checkbox{
+  padding-right: 100%;
+  cursor: pointer;
+}
+.btn-container *{
   width: 100%;
 }
 .login-btn{
@@ -118,6 +129,27 @@
   text-decoration: underline;
   cursor: pointer;
 }
-.login-img{
-
+.img-container{
+  position: relative;  
+  color: var(--primary-txt-color);
+}
+.img-container{
+  margin-block: auto;
+  min-width: 260px;
+  height: 80%;
+  border-radius: var(--img-rounded-lg);
+  background-color: #04213c7e;
+  background-image: url('public/sample-image.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+}
+.img-container p{
+  position: absolute;
+  bottom: 1rem;
+  width: 100%;
+  padding-inline: 2rem; 
+  font-size: 2.25rem;
+  line-height: 3.75rem;
+  font-weight: var(--semibold)
 }

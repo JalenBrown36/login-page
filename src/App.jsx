@@ -9,28 +9,30 @@ function App() {
             <h1><span>Welcome back!</span></h1>
             <p><span>Enter your username and password to log in to your admin panel</span></p>
           </div>
-          <div className='google-login-wrapper'>
-            <img src="public\google-icon.png" alt="google icon" />
+          <div className='google-login-container'>
+            <img src="/google-icon.png" alt="google icon" />
             <button className='google-btn'>
               <span>Login in with Google</span>
             </button>
           </div>
           <div className='input-form'>
-            <div className='input-wrapper'>
+            <div className='input-container'>
               <label>Email</label>
               <input type='text' placeholder='Email' name='email'/>
             </div>
-            <div className='input-wrapper'>
+            <div className='input-container'>
               <label>Password</label>
               <input type='password' placeholder='Password' name='password'/>
             </div>
-            <div className='checkbox-wrapper'>
-              <label>
+            {/* Check box input */}
+            <div className='checkbox-container'>
+              <label className='checkbox'>
                 <input name='cb' type='checkbox' />
               </label>
               <label htmlFor='cb'>Remember me</label>
             </div>
-            <div className='btn-wrapper'>
+            {/* Login button */}
+            <div className='btn-container'>
               <button className='login-btn'>Log in</button>
             </div>
           </div>
@@ -42,8 +44,8 @@ function App() {
             <a href=''><span>Forgot your password?</span></a>
           </div>
         </div>
-        <div className='login-img'>
-          Sample image
+        <div className='img-container'>
+          <p><span>Get Connected.</span></p>
         </div>
       </section>
     </>
